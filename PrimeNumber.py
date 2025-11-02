@@ -1,11 +1,11 @@
+#Program to find a given number is prime or not.
+
+#Funtion to check a number is prime or not
 def is_prime(n):
     if n <= 1:
         return False
-    print(int(n**0.5)+1)
     for i in range(2, int(n**0.5)+1):
-        print(i)
         nn = n%i
-        print(f"{n} % {i} = {nn}")
         if nn ==0:
             return False
     return True
